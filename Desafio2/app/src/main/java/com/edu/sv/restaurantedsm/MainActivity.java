@@ -9,7 +9,6 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //DECLARACION DE VARIABLES
     private ListView lista;
 
     @Override
@@ -17,22 +16,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //INSTANCIAR OBJETOS DE XML A JAVA
         lista = findViewById(R.id.opciones);
 
-        //MÉTODO QUE NOS PERMITE ACCEDER A UN ACTIVITY SEGUN LA SELECCIÓN HECHA
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                          @Override
                                          public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                             //SE EVALÚA QUE LA SELECCIÓN NO FUESE NULA
                                              if(position != -1) {
-                                                 //En caso de ser cualquier opcion, excepto por el carrito, envía al Activity2
                                                  if (position != 2) {
                                                      Intent intento = new Intent(MainActivity.this, ListaActivity.class);
                                                      intento.putExtra("posicion", position);
                                                      startActivity(intento);
 
-                                                 } else {//Caso contratio envía al ActivityStore que muestra el carrito
+                                                 } else {
                                                      Intent intento = new Intent(MainActivity.this, ResumenActivity.class);
                                                      startActivity(intento);
                                                  }//Fin If

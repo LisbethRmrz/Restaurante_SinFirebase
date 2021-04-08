@@ -12,8 +12,8 @@ import android.widget.ListView;
 
 public class ListaActivity extends AppCompatActivity {
 
-    ListView listaCervezas;
-    ListView listaPizzas;
+    ListView listaRefrescos;
+    ListView listaPlatos;
     public static int pos;
 
     @Override
@@ -29,10 +29,10 @@ public class ListaActivity extends AppCompatActivity {
     public void definirLista(int pos) {
 
         if (pos == 0) {
-            listaCervezas = findViewById(R.id.lista);
+            listaRefrescos = findViewById(R.id.lista);
             ArrayAdapter<Producto> adaptador = new ArrayAdapter<Producto>(this, android.R.layout.simple_list_item_1, Producto.refrescos);
-            listaCervezas.setAdapter(adaptador);
-            listaCervezas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            listaRefrescos.setAdapter(adaptador);
+            listaRefrescos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     if (position != -1) {
@@ -47,10 +47,10 @@ public class ListaActivity extends AppCompatActivity {
         }//Fin If
 
         if (pos == 1) {
-            listaPizzas = findViewById(R.id.lista);
+            listaPlatos = findViewById(R.id.lista);
             ArrayAdapter<Producto> adaptador = new ArrayAdapter<Producto>(this, android.R.layout.simple_list_item_1, Producto.platos);
-            listaPizzas.setAdapter(adaptador);
-            listaPizzas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            listaPlatos.setAdapter(adaptador);
+            listaPlatos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     if (i != -1) {

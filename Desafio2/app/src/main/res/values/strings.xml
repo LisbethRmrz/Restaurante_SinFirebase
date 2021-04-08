@@ -1,20 +1,19 @@
 <resources>
     <string name="app_name">RestauranteDSM</string>
-    <string name="main_registrarse">Registrarse</string>
-    <string name="main_login">Iniciar Sesión</string>
-    <string name="register_correo">Correo Electrónico</string>
-    <string name="register_contraseña">Contraseña</string>
-    <string name="register_crear">Crear Cuenta</string>
-    <string name="login_correo">Correo Electrónico</string>
-    <string name="login_contraseña">Contraseña</string>
-    <string name="login_olvidarcontraseña">Olvidaste tu contraseña?</string>
-    <string name="login_iniciar">Iniciar Sesión</string>
-    <string name="login_google">Ingresar con Google</string>
-    <string name="forgot_correo">Correo Electrónico</string>
-    <string name="forgot_restablecer">Restablecer Contraseña</string>
     <string-array name="opciones">
         <item>Bebidas</item>
         <item>Comidas</item>
         <item>Ver Pedidos</item>
     </string-array>
+    <string name="main_menu">Menú Principal</string>
+    <string name="lista_productos">Listado de Productos</string>
+    <string name="textview">TextView</string>
+    <string name="number">1</string>
+    <string name="menos">-</string>
+    <string name="mas">+</string>
+    <string name="pedido">Enviar Pedido</string>
+    <string name="cantidad">Definir Cantidad</string>
+    <string name="total">Total:</string>
+    <string name="cancelar">Calcelar Pedido</string>
+    <string name="main_google">Ingresar con Google</string>
 </resources>

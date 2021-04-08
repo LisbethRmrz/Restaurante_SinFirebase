@@ -13,7 +13,8 @@
         <activity android:name=".Lista2Activity" />
         <activity android:name=".ListaActivity" />
         <activity android:name=".InicioActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
